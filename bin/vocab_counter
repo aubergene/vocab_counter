@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
-require 'lib/vocab_counter'
+
+$LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'
+require 'vocab_counter'
 
 unless File.exists?(ARGV[0].to_s)
   puts "Vocab counter: please specify a file"
