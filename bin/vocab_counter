@@ -3,12 +3,11 @@
 $LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'
 require 'vocab_counter'
 
-unless File.exists?(ARGV[0].to_s)
-  puts "Vocab counter: please specify a file"
-  Process.exit
+v = VocabCounter.new
+
+ARGF.each do |line|
+  v.count(line)
 end
 
-file = File.open(ARGV[0])
-
-puts VocabCounter.count(file.read)
+puts v.report
 
