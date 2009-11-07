@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require 'lib/vocab_counter'
+
+unless File.exists?(ARGV[0].to_s)
+  puts "Vocab counter: please specify a file"
+  Process.exit
+end
+
+file = File.open(ARGV[0])
+
+puts VocabCounter.count(file.read)
+

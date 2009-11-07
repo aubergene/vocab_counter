@@ -1,9 +1,21 @@
 = vocab_counter
 
-Description goes here.
+A simple script to count the number of unique terms in a document (case insensitive). Produces csv output.
+
+It's also a way for me to practise creating a gem :)
+
+== Example
+
+The cat sat on the mat
+
+the,2
+cat,1
+sat,1
+on,1
+mat,1
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a
@@ -16,3 +28,4 @@ Description goes here.
 == Copyright
 
 Copyright (c) 2009 Julian Burgess. See LICENSE for details.
+
