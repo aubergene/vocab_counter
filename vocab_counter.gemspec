@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.authors = ["Julian Burgess"]
   s.date = %q{2009-11-07}
   s.default_executable = %q{vocab_counter}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Produces a CSV sorted by the number of times each term appears (case insensitive, lowercase output).}
   s.email = %q{aubergene@gmail.com}
   s.executables = ["vocab_counter"]
   s.extra_rdoc_files = [
@@ -29,13 +29,14 @@ Gem::Specification.new do |s|
      "lib/vocab_counter.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb",
-     "spec/vocab_counter_spec.rb"
+     "spec/vocab_counter_spec.rb",
+     "vocab_counter.gemspec"
   ]
   s.homepage = %q{http://github.com/aubergene/vocab_counter}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Count the number of unique terms in a given text}
   s.test_files = [
     "spec/spec_helper.rb",
      "spec/vocab_counter_spec.rb"
